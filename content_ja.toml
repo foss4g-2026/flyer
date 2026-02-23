@@ -1,0 +1,57 @@
+url = "https://2026.foss4g.org/"
+
+[event]
+tagline = "Bridging Geospatial Technology and Humanity"
+description = "FOSS4Gは、OSGeo財団が主催するオープンソース地理空間ソフトウェアに特化した世界最大の国際会議です。2026年、そのFOSS4Gが広島にて日本初開催されます。"
+
+[[workshop]]
+name = "ハンズオンデイ"
+date_start = "2026年8月30日"
+date_end = "2026年8月31日"
+venue = "RCC文化センター"
+
+[[conference]]
+name = "コアデイ"
+date_start = "2026年9月1日"
+date_end = "2026年9月3日"
+venue = "広島国際会議場"
+
+[[communitysprint]]
+name = "コミュニティスプリント"
+date_start = "2026年9月4日"
+date_end = "2026年9月5日"
+venue = "広島で予定"
+
+[[registration.tickets]]
+name = "Super Early Bird"
+price = "¥40,000"
+note = "100枚限定"
+deadline = "〜2026年3月7日"
+
+[[registration.tickets]]
+name = "Early Bird"
+price = "¥50,000"
+deadline = "〜2026年4月21日"
+
+[[registration.tickets]]
+name = "Regular"
+price = "¥80,000"
+deadline = "〜当日"
+
+[[registration.tickets]]
+name = "学生"
+price = "¥30,000"
+
+[[registration.tickets]]
+name = "国内"
+price = "¥40,000"
+note = "学生以外の国内在住者向け"
+
+[[registration.tickets]]
+name = "各ハンズオン"
+price = "¥7,500"
+
+[footer]
+organizer = "主催：FOSS4G Hiroshima 2026 LOC / OSGeo.JP / OSGeo財団"
+contact = "info@foss4g.org"
+qr_caption = "Webページはこちら"
