@@ -6,19 +6,19 @@ description = "FOSS4Gは、OSGeo財団が主催するオープンソース地理
 
 [[workshop]]
 name = "ワークショップ"
-date_start = "2026年8月30日(日)"
+date_start = "8月30日(日)"
 date_end = "31日(月)"
 venue = "RCC文化センター"
 
 [[conference]]
 name = "カンファレンス"
-date_start = "2026年9月1日(火)"
+date_start = "9月1日(火)"
 date_end = "3日(木)"
 venue = "広島国際会議場"
 
 [[communitysprint]]
 name = "コードスプリント"
-date_start = "2026年9月4日(金)"
+date_start = "9月4日(金)"
 date_end = "5日(土)"
 venue = "未定"
 
@@ -26,12 +26,12 @@ venue = "未定"
 name = "Super Early Bird"
 price = "¥40,000"
 note = "100枚限定"
-deadline = "2026年3月7日まで"
+deadline = "3月7日まで"
 
 [[registration.tickets]]
 name = "Early Bird"
 price = "¥50,000"
-deadline = "2026年4月21日まで"
+deadline = "4月21日まで"
 
 [[registration.tickets]]
 name = "Regular"
