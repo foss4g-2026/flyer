@@ -2,10 +2,14 @@
 
 #let image_path = "../assets/img9228.jpg"
 #let logo_path  = "../assets/logo-02.svg"
-#let img_height = 183mm  // 8:5 ratio (8/13 of A4 height)
+#let img_height = 189mm  // 8:5 ratio + 3mm bleed on top and bottom
 #let content = toml("../content_en.toml")
 
-#set page(paper: "a4", margin: 0pt)
+#set page(
+  width: 216mm,   // A4 width (210mm) + 3mm bleed on each side
+  height: 303mm,  // A4 height (297mm) + 3mm bleed on top and bottom
+  margin: 0pt
+)
 #set text(font: ("Helvetica Neue", "Arial", "Helvetica"), lang: "en")
 
 // ─────────────────────────────────────────────────────────────
