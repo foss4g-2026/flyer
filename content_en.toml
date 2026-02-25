@@ -44,7 +44,8 @@ price = "¥40,000"
 note = "For residents in Japan"
 
 [[registration.tickets]]
-name = "Each Workshop"
+name = "Workshop"
+note = "per session"
 price = "¥7,500"
 
 [footer]

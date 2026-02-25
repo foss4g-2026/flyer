@@ -89,9 +89,9 @@
 
     // ── 右列：参加費 ──
     block(height: column_height)[
-      #v(-5pt)
-      #text(size: 12pt, weight: "bold")[参加費]
+      #text(size: 12pt, weight: "bold")[参加費(税抜)]
       #set text(size: 10pt)
+      #v(-4pt)
       #grid(
         columns: (1fr, auto),
         column-gutter: 8pt,
@@ -125,9 +125,9 @@
   // フッター：主催・URL・連絡先
   #set text(size: 10pt)
   #text(weight: "bold", size: 11pt)[#content.footer.organizer]
-  #v(4pt)
+  #v(0pt)
   #text(size: 10.5pt)[#link(content.url)[#content.url]]
-  #h(18pt)
+  #h(16pt)
   #text(size: 10.5pt)[問い合わせ：#link("mailto:" + content.footer.contact)[#content.footer.contact]]
 ]
 

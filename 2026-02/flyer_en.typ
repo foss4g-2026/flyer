@@ -86,7 +86,7 @@
 
     // ── Right column: Registration ──
     block(height: column_height)[
-      #text(size: 12pt, weight: "bold")[Registration]
+      #text(size: 12pt, weight: "bold")[Registration (Excluding Tax)]
       #set text(size: 10pt)
       #grid(
         columns: (1fr, auto),
@@ -121,7 +121,7 @@
   // Footer: organizer, website, contact
   #set text(size: 10pt)
   #text(weight: "bold", size: 11pt)[#content.footer.organizer]
-  #v(4pt)
+  #v(0pt)
   #text(size: 10.5pt)[#link(content.url)[#content.url]]
   #h(18pt)
   #text(size: 10.5pt)[Contact: #link("mailto:" + content.footer.contact)[#content.footer.contact]]

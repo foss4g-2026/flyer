@@ -48,7 +48,8 @@ price = "¥40,000"
 note = "学生以外の国内在住者向け"
 
 [[registration.tickets]]
-name = "各ハンズオン"
+name = "ワークショップ"
+note = "1回分"
 price = "¥7,500"
 
 [footer]
