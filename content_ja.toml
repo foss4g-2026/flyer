@@ -5,38 +5,38 @@ tagline = "Bridging Geospatial Technology and Humanity"
 description = "FOSS4Gは、OSGeo財団が主催するオープンソース地理空間ソフトウェアに特化した世界最大の国際会議です。2026年、そのFOSS4Gが広島にて日本初開催されます。"
 
 [[workshop]]
-name = "ハンズオンデイ"
-date_start = "2026年8月30日"
-date_end = "2026年8月31日"
+name = "ワークショップ"
+date_start = "2026年8月30日(日)"
+date_end = "31日(月)"
 venue = "RCC文化センター"
 
 [[conference]]
-name = "コアデイ"
-date_start = "2026年9月1日"
-date_end = "2026年9月3日"
+name = "カンファレンス"
+date_start = "2026年9月1日(火)"
+date_end = "3日(木)"
 venue = "広島国際会議場"
 
 [[communitysprint]]
-name = "コミュニティスプリント"
-date_start = "2026年9月4日"
-date_end = "2026年9月5日"
-venue = "広島で予定"
+name = "コードスプリント"
+date_start = "2026年9月4日(金)"
+date_end = "5日(土)"
+venue = "未定"
 
 [[registration.tickets]]
 name = "Super Early Bird"
 price = "¥40,000"
 note = "100枚限定"
-deadline = "〜2026年3月7日"
+deadline = "2026年3月7日まで"
 
 [[registration.tickets]]
 name = "Early Bird"
 price = "¥50,000"
-deadline = "〜2026年4月21日"
+deadline = "2026年4月21日まで"
 
 [[registration.tickets]]
 name = "Regular"
 price = "¥80,000"
-deadline = "〜当日"
+deadline = "当日まで"
 
 [[registration.tickets]]
 name = "学生"

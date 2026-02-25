@@ -3,6 +3,7 @@
 #let image_path = "../assets/img9228.jpg"
 #let logo_path  = "../assets/logo-02.svg"
 #let img_height = 208mm
+#let content = toml("../content_en.toml")
 
 #set page(paper: "a4", margin: 0pt)
 #set text(font: ("Helvetica Neue", "Arial", "Helvetica"), lang: "en")
@@ -35,13 +36,12 @@
 // Title (positioned in the lower portion of the image)
 #place(
   top + center,
-  dy: 134mm,
+  dy: 33mm,
   block(width: 100%)[
     #align(center)[
-      #text(fill: white, size: 44pt, weight: "bold",
+      #text(fill: white, size: 40pt, weight: "bold",
         tracking: 0.5pt)[FOSS4G Hiroshima 2026]
       #v(4pt)
-      #text(fill: white, size: 36pt, weight: "bold")[Peace4G]
     ]
   ],
 )
@@ -73,14 +73,14 @@
         column-gutter: 6pt,
         row-gutter: 5pt,
 
-        [*Hands-on Days*],
-        [August 30 – 31, 2026 \ #text(size: 7.5pt)[RCC Bunka Center]],
+        [*#content.workshop.at(0).name*],
+        [#content.workshop.at(0).date_start – #content.workshop.at(0).date_end \ #text(size: 7.5pt)[#content.workshop.at(0).venue]],
 
-        [*Core Days*],
-        [September 1 – 3, 2026 \ #text(size: 7.5pt)[International Conference Center Hiroshima]],
+        [*#content.conference.at(0).name*],
+        [#content.conference.at(0).date_start – #content.conference.at(0).date_end \ #text(size: 7.5pt)[#content.conference.at(0).venue]],
 
-        [*Community Sprint*],
-        [September 4 – 5, 2026 \ #text(size: 7.5pt)[Planned in Hiroshima]],
+        [*#content.communitysprint.at(0).name*],
+        [#content.communitysprint.at(0).date_start – #content.communitysprint.at(0).date_end]
       )
     ],
 
@@ -95,23 +95,22 @@
         row-gutter: 3pt,
         align: (left, right),
 
-        [Super Early Bird \ #text(size: 7pt, fill: luma(50%))[Limited to 100 — Until March 7, 2026]],
-        [*¥40,000*],
+        ..content.registration.tickets.map(ticket => {
+          let details = if "note" in ticket and "deadline" in ticket {
+            text(size: 7pt, fill: luma(50%))[#ticket.note — #ticket.deadline]
+          } else if "deadline" in ticket {
+            text(size: 7pt, fill: luma(50%))[#ticket.deadline]
+          } else if "note" in ticket {
+            text(size: 7pt, fill: luma(50%))[(#ticket.note)]
+          } else {
+            []
+          }
 
-        [Early Bird \ #text(size: 7pt, fill: luma(50%))[Until April 21, 2026]],
-        [*¥50,000*],
-
-        [Regular \ #text(size: 7pt, fill: luma(50%))[Until day of event]],
-        [*¥80,000*],
-
-        [Student],
-        [*¥30,000*],
-
-        [Local #text(size: 7pt, fill: luma(50%))[(for residents in Japan, non-student)]],
-        [*¥40,000*],
-
-        [Each Workshop],
-        [*¥7,500*],
+          (
+            [#ticket.name #if details != [] {[#details]}],
+            [*#ticket.price*]
+          )
+        }).flatten()
       )
     ],
   )
@@ -122,11 +121,11 @@
 
   // Footer: organizer, website, contact
   #set text(size: 8pt)
-  #text(weight: "bold")[Organized by: FOSS4G Hiroshima 2026 LOC / OSGeo.JP / OSGeo Foundation]
+  #text(weight: "bold")[#content.footer.organizer]
   #linebreak()
-  #link("https://2026.foss4g.org/")[https://2026.foss4g.org/]
+  #link(content.url)[#content.url]
   #h(14pt)
-  Contact: #link("mailto:info@foss4g.org")[info\@foss4g.org]
+  Contact: #link("mailto:" + content.footer.contact)[#content.footer.contact]
 ]
 
 // Logo (absolute placement, bottom-right)
@@ -135,4 +134,12 @@
   dx: -18pt,
   dy: -14pt,
   image(logo_path, height: 26mm),
+)
+
+// QR code (absolute placement, bottom-left)
+#place(
+  bottom + left,
+  dx: 18pt,
+  dy: -14pt,
+  image("../assets/foss4g-2026-en.svg", height: 26mm),
 )

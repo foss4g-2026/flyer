@@ -1,19 +1,19 @@
 url = "https://2026.foss4g.org/"
 
 [[workshop]]
-name = "Hands-on Days"
+name = "Workshop"
 date_start = "August 30, 2026"
 date_end = "August 31, 2026"
 venue = "RCC Bunka Center"
 
 [[conference]]
-name = "Core Days"
+name = "Conference"
 date_start = "September 1, 2026"
 date_end = "September 3, 2026"
 venue = "International Conference Center Hiroshima"
 
 [[communitysprint]]
-name = "Community Sprint"
+name = "Code Sprint"
 date_start = "September 4, 2026"
 date_end = "September 5, 2026"
 venue = "Planned in Hiroshima"
