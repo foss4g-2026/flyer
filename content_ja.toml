@@ -17,19 +17,18 @@ date_end = "3日(木)"
 venue = "広島国際会議場"
 
 [[communitysprint]]
-name = "コードスプリント"
+name = "コミュニティスプリント"
 date_start = "9月4日(金)"
-date_end = "5日(土)"
-venue = "未定"
-
-[[registration.tickets]]
-name = "学生"
-price = "¥30,000"
+venue = "アステールプラザ"
 
 [[registration.tickets]]
 name = "ローカル"
 price = "¥40,000"
 note = "学生以外の日本国内在住者向け"
+
+[[registration.tickets]]
+name = "学生"
+price = "¥30,000"
 
 [[registration.tickets]]
 name = "ワークショップ"
