@@ -13,10 +13,9 @@ date_end = "September 3"
 venue = "International Conference Center Hiroshima"
 
 [[communitysprint]]
-name = "Code Sprint"
+name = "Community Sprint"
 date_start = "September 4"
-date_end = "September 5"
-venue = "Planned in Hiroshima"
+venue = "ASTERPLAZA"
 
 [[registration.tickets]]
 name = "Super Early Bird"
